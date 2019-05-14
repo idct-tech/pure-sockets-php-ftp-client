@@ -5,7 +5,7 @@
     "require": {
         "php": ">=5.2"
     },
-    "license": "BSD 2-Clause \"Simplified\" License",
+    "license": "BSD-2-Clause",
     "authors": [
         {
             "name": "Bartosz Pachołek",
