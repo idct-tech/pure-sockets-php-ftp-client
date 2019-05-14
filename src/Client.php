@@ -61,7 +61,7 @@ class Client
         } while ($array['unread_bytes'] > 0);
 
         if (substr($contents[count($contents)-1], 0, 3) != 331) {
-            throw new FtpException($contents);
+            throw new FtpException($contents[count($contents)-1]);
         }
 
         fputs($this->socket, 'PASS '.$password."\r\n");
@@ -75,7 +75,7 @@ class Client
             return $this;
         }
 
-        throw new FtpException($contents);
+        throw new FtpException($contents[count($contents)-1]);
     }
 
     public function quit()
