@@ -1,0 +1,21 @@
+{
+    "name": "idct/pure-sockets-php-ftp-client",
+    "description": "FTP client for PHP using only sockets; loosely based on Net_FTP.",
+    "type": "library",
+    "require": {
+        "php": ">=5.2"
+    },
+    "license": "BSD 2-Clause \"Simplified\" License",
+    "authors": [
+        {
+            "name": "Bartosz Pachołek",
+            "email": "bartosz@idct.pl"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "IDCT\\PureFTP\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
